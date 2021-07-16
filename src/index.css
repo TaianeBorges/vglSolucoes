@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+ }
+ 
+ :root {
+  --primary: rgb(201 135 50);;
+  --secundary:   rgb(14 37 55);
+  --white: #FFFFFF;
+  
+  
+  
+ }
+ 
+ html,
+body {
+ margin: 0;
+ padding: 0;
+}
+a {
+  color: inherit;
+ }

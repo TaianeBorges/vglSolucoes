@@ -1,0 +1,181 @@
+*{
+  padding:0;
+  color: #fff;
+}
+
+
+.body{
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  background-image: url('./assets/img//1.png');
+  -webkit-mask-image: linear-gradient(to center, transparent 2%, black 20%);
+  background-repeat: round;
+  text-align: center;
+  height: 35em;
+  width: 100%;
+}
+
+
+h1{
+  font-size: 4rem;
+}
+
+p{
+  font-size: 24px;
+  
+}
+.section-contact {
+  display: inline-flex;
+  width: 100%;
+  background-color:var(--primary);
+  
+  box-shadow: rgb(0, 0, 0) 10px 2px 10px 0;
+  align-items: center;
+   justify-content: center;
+}
+
+
+.contact{
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 1rem;
+  text-align: start;
+  font-size: 3rem;
+
+
+}
+.contact p{
+  background-color: transparent;
+  font-size: 16px;
+
+}
+
+
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+ background-color: var(--secundary);
+    
+}
+
+
+
+.suporte-remote{
+  display: inline-flex;	
+  
+}
+
+.remote{
+  background-image: url("./assets/img/monitoramento.jpeg");
+  -webkit-mask-image: linear-gradient(to left, transparent 5%, rgb(34, 32, 32) 50%);
+  background-repeat: no-repeat;
+ height: max-content;
+ width: 50%;
+  
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 40%;
+  
+}
+
+.suporte-presencial{
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.presencial{
+  /* background-image: url("./assets/img/manutençao.png"); */
+  -webkit-mask-image: linear-gradient(to right, transparent 5%, black 50%);
+  background-repeat: no-repeat;
+ 
+  width: 50%;
+  margin: 0;
+ 
+
+}
+
+.instalacao-rede{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rede{
+/* background-image: url("./assets/img/cabo-removebg-preview.png"); */
+background-repeat: no-repeat;
+-webkit-transform: scaleX(-1);
+width: 100%;
+image-orientation: flip;
+filter: drop-shadow(2px 4px 6px black);
+margin-top: 2rem;
+}
+
+
+
+.text-rede{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: start;
+  flex-wrap: wrap;
+  
+  
+}
+.text-rede h1{
+  text-align: center;
+}
+
+
+.opcoes{
+  display: inline-flex;
+  align-items: center;
+}
+.line{
+  width: 20rem;
+  height: 0.5rem;
+  background-color: var(--primary);
+  margin-top: -2rem;
+  
+}
+
+.aboutwe{
+  margin: 5rem;
+  align-items: center;
+}
+
+.map{
+  max-width: 100%;
+  
+}
+
+
+
+footer{
+  background-color: var(--secundary);
+  height: 20rem;
+}
+
+
+/************** MOBILE *******************/
+
+@media (max-width: 800px) {
+  .header{
+    height: auto;
+  }
+  .section-contact{
+    flex-direction: column;
+  }
+  .footer{
+    display: none;
+  }
+
+}
