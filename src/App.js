@@ -3,11 +3,15 @@ import "./App.css";
 import React, { Component } from "react";
 import Menu from "./components/menu/index";
 import Map from "../src/components/map/index";
-import { Done, DoneOutlineOutlined, DoneOutlineRounded, Email, Facebook, Instagram, Phone } from "@material-ui/icons";
+import {  DoneOutlineRounded, Email, Facebook, Instagram, Phone, SecurityOutlined, SettingsInputAntenna, SettingsInputComponentOutlined, SettingsInputHdmiOutlined} from "@material-ui/icons";
 import Remote  from "./assets/img/monitoramento.jpeg";
 import Presencial from  './assets/img/2.png'
 import Rede from './assets/img/innov-edit.png';
 import Grade from './components/Grade/index';
+import parceirosImage from './assets/img/parceiros-svg.svg';
+
+
+
 
 
 
@@ -53,6 +57,7 @@ class App extends Component {
             <img className="remote" src={Remote} alt=""/>
             <div className="text">
               <h1>Suporte Remoto</h1>
+              
             <div className="line"></div>
               <p>Imprevistos acontecem e o que poderia levar muito tempo 
                 para o deslocamento de suporte local, pode ser resolvido 
@@ -83,13 +88,18 @@ class App extends Component {
             <div className="text-rede">
               <h1>Rede</h1>
               <p>
-                <DoneOutlineOutlined/>Desenvolvimento e Instalação de Rede Cabeamento Lógico Estruturado;<br/>
-                <Done/>Instalação e Manutenção de Rede de Computadores<br/>
-                <Done/>Switches,  Gateways, Bridges, Routers, Hubs<br/>
-                <Done/>Configurações e Segurança de Rede<br/>
+                <SettingsInputComponentOutlined/> Desenvolvimento e Instalação de Rede Cabeamento Lógico Estruturado;<br/>
+                <SettingsInputHdmiOutlined/>Instalação e Manutenção de Rede de Computadores<br/>
+                <SettingsInputAntenna/> Switches,  Gateways, Bridges, Routers, Hubs<br/>
+                <SecurityOutlined/>Configurações e Segurança de Rede<br/>
                    
                 </p>
             </div>
+          </div>
+          <div className="cards">
+            
+            
+
           </div>
         
         
@@ -99,24 +109,30 @@ class App extends Component {
               <h1>QUEM SOMOS?</h1>
               <p>
                 A VGL Soluções surgiu para trazer soluções de TI para sua empresa e casa,
-                somos solucionadores de problemas de informática e viemos te ajudar no que for preciso, 
-                entregamos qualidade em todo serviço prestado, desde um suporte remoto até projetos de grande porte como instalação de Rede.
-                Te convido a conferir os parceiros nossos parceiros.
+                Aqui você encontra profissionais com mais de 10anos de experiência em TI, 
+                Vamos usar todo nosso conhecimento para te ajudar no que for preciso, 
+                entregamos qualidade em todo serviço prestado, desde um suporte remoto 
+                até projetos de grande porte como instalação de Rede.
+                Te convido a conferir os nossos parceiros.
               </p>
+  
             </div>
           </div>
           </div>
          
-          <div className="map">
-            <Map />
-          </div>
+         
+            
+          {/* </div>
+          <div className="parceiros">
+          <img className="parceirosImage" src={parceirosImage} alt=""/>
+          </div> */}
        
         
 
-          <footer>
+          {/* <footer>
         <p>&copy; TAIDEV </p>
-        </footer>
-     </div>
+        </footer> */}
+</div>
       
      
     );

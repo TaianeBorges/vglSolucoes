@@ -173,7 +173,23 @@ footer{
   }
   .section-contact{
     flex-direction: column;
+    
+    
   }
+
+  .suporte-remote,
+  .suporte-presencial,
+  .rede{
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .remote,
+  .presencial,
+  .text{
+    width: 100%;
+  }
+  
   .footer{
     display: none;
   }
